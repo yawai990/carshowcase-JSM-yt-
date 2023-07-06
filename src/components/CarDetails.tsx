@@ -65,7 +65,7 @@ const CarDetails = ({isOpen,closeModel,car}:CarDetailsProps) => {
                   </div>
 
                   <div className="flex flex-1 flex-col gap-2">
-                  <h2>
+                  <h2 className='capitalize'>
                     {car.make } {car.model}
                   </h2>
 
