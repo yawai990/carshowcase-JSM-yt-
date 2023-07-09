@@ -1,4 +1,4 @@
-import { DetailedHTMLProps, MouseEventHandler } from "react"
+import { MouseEventHandler } from "react"
 
 export interface CustomButtonProps {
     title :string,
@@ -10,8 +10,8 @@ export interface CustomButtonProps {
 }
 
 export interface SearchManufactureProps{
-    manufacture:string,
-    setManufacture:(manufacture:string) => void;
+    selected:string,
+    setSelected:(manufacture:string) => void;
 }
 
 export interface CarProps{
@@ -42,5 +42,17 @@ export interface OptionProps{
 }
 export interface CustomFilterProps{
     title :string,
-    options : OptionProps[]
+    options : OptionProps[],
+    setFilter:(filter:any)=>void;
+}
+
+export interface ShoreMoreProps{
+    pageNumber:number,
+    isNext:boolean,
+    setLimit:(limit:number)=>void;
+}
+
+export interface SearchBarProps{
+    setManufacturer:(manufacturer:string)=>void,
+    setModel:(mode:string)=>void;
 }
